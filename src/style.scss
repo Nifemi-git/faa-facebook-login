@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signUp{
+    margin: 10% auto;
+    width: 400px;
+    padding: 5px 15px 20px 15px;
+    box-shadow: 0px 0px 3px 5px lightgrey;
+    border-radius: 5px;
+}
+
+.signUp--head{
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+    h1{
+        margin-bottom: 5px;
+    }
+    
+    #icon{
+        height: 30px;
+        width: 30px;
+        color: gray;
+        position: relative;
+        right: -10px;
+    }
+
+    #icon:hover{
+        cursor: pointer;
+    }
+}
+
+#hr{
+    margin-inline: -15px;
+}
+
+.signUp--form{
+    p{
+        font-size: 13px;
+        margin-bottom: 2px;
+    }
+}
+
+.form-sectn1{
+    margin-block: 15px;
+
+    input{
+        margin-block: 5px;
+        padding: 15px 10px;
+        border: 1px solid lightgray;
+        border-radius: 4px;
+        outline: none;
+        background-color: #f9f9f9;
+        height: 25px;
+    }
+
+    input:focus::placeholder{
+        opacity: 0.6;
+    }
+
+    #names-text-input{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #firstname, #surname{
+        width: 49%;
+    }
+
+    #email, #pass{
+        width: 100%;
+    }
+
+        
+}
+
+.select-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 7px;
+
+
+    .selectElem{
+        width: 33.3%;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        padding: 10px 5px;
+    }
+
+}
+.genders{
+    display: flex;
+    gap: 7px;
+    justify-content: space-between;
+    
+    .gender-option{
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid lightgrey;
+        border-radius: 4px;
+        padding: 10px;
+        width: 33.3%;
+    }
+}
+
+.signUp--terms{
+    margin-block: 15px;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    p{
+        font-size: 10px;
+        color: #686464;
+    }
+
+    a{
+        text-decoration: none;
+        color: #002280;
+    }
+}    
+
+.signUp--btn{
+    width: 100%;
+    text-align: center;
+
+    button{
+        width: 40%;
+        padding: 7px 0px;
+        border: none;
+        border-radius: 4px;
+        background-color: #00b711;
+        color: white;
+        font-weight: bold;
+    }
+
+    button:hover{
+        cursor: pointer;
+        background-color: #079215;
+    }
+
+    button:active{
+        opacity: 0.6;
+    }
+}
